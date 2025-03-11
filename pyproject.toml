@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "calculate-shares"
+version = "0.1.0"
+description = ""
+authors = ["Anna Kartasheva <annakartashevamail@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pydantic = "^2.10.6"
+xlsxwriter = "^3.2.2"
+ruff = "^0.9.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
