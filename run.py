@@ -35,10 +35,13 @@ class Share(BaseModel):
 
 def know_shares(shares_list: List[Dict[str, int]]):
     result = []
+    shares_counter = 0
     for share in shares_list:
+        shares_counter += 1
         share_name = list(share.keys())[0]
         each_share = Share(total_shares=share[share_name])
         pretty_dict = {}
+        pretty_dict["№"] = shares_counter
         pretty_dict["название"] = share_name
         pretty_dict["всего акций"] = each_share.total_shares
         pretty_dict["акций каждому"] = each_share.divided
