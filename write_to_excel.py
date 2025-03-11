@@ -9,6 +9,7 @@ def write_to_excel(resulting_shares: List[Dict[str, int]]):
     row = 0
     column = 0
     col_names = [
+        "№",
         "Название",
         "Всего акций",
         "Акций каждому",
